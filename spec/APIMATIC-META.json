@@ -1,0 +1,52 @@
+{
+  "ImportSettings": {
+    "AutoGenerateTestCases": false,
+    "ImportAdditionalHeader": false,
+    "ImportAdditionalTypeCombinatorModels": false,
+    "ImportTypeCombinatorsWithOnlyOneType": false,
+    "PreserveSingleValueEnum": true
+  },
+  "CodeGenSettings": {
+    "EncodeTemplateParameters": false,
+    "Timeout": 30,
+    "ValidateRequiredParameters": true,
+    "AddSingleAuthDeprecatedCode": false,
+    "EnableGlobalUserAgent": true,
+    "UserAgent": "{language}-SDK/{version} (OS: {os-info}, Engine: {engine}/{engine-version})",
+    "EnableLogging": true,
+    "EnableModelKeywordArgsInRuby": true,
+    "SymbolizeHashKeysInRuby": true,
+    "ReturnCompleteHttpResponse": true,
+    "UserConfigurableRetries": true,
+    "UseEnumPrefix": false,
+    "ExtendedAdditionalPropertiesSupport": true,
+    "EnforceStandardizedCasing": true,
+    "ControllerPostfix": "Api",
+    "DoNotSplitWords": ["oauth"]
+  },
+  "ServerConfiguration": {
+    "DefaultEnvironment": "Test",
+    "DefaultServer": "access",
+    "Environments": [
+      {
+        "name": "Test",
+        "servers": [
+          {
+            "name": "access",
+            "url": "https://try.access.worldpay.com"
+          }
+        ]
+      },
+      {
+        "name": "Live",
+        "servers": [
+          {
+            "name": "access",
+            "url": "https://access.worldpay.com"
+          }
+        ]
+      }
+    ],
+    "Parameters": []
+  }
+}
