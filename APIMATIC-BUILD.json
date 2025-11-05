@@ -5,17 +5,24 @@
     "contentFolder": "./",
     "apiSpecPath": "./spec",
     "apiSpecs": [],
+    "baseUrl": "https://wp-payments-poc-apimatic.pages.dev",
     "apiMergeSettings": {
       "type": "Full"
     },
     "languageConfig": {
+      "typescript": {
+        "packageRepository": "Npm",
+        "packageSettings": {
+          "PackageName": "wp-payments-sdk",
+          "Version": "1.0.0"
+        }
+      },
       "http": {},
       "csharp": {},
       "java": {},
       "php": {},
       "python": {},
       "ruby": {},
-      "typescript": {},
       "go": {}
     },
     "portalSettings": {
@@ -54,7 +61,12 @@
         },
         "ts_generic_lib": {
           "sdkDownloadLink": "",
-          "disableSdkDownload": false
+          "disableSdkDownload": false,
+          "aiIntegration": {
+            "cursor": {
+              "isEnabled": true
+            }
+          }
         },
         "go_generic_lib": {
           "sdkDownloadLink": "",
